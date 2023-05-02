@@ -11,11 +11,11 @@ public class LutemonListActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rocket_list);
+        //setContentView(R.layout.activity_rocket_list);
 
         Player player = Player.getInstance();
 
-        RecyclerView recyclerView = findViewById(R.id.rvRocketList);
+        RecyclerView recyclerView = findViewById(androidx.core.R.id.action_container);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new LutemonListAdapter(getApplicationContext(), player.getLutemons()));

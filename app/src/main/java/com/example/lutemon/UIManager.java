@@ -14,16 +14,10 @@ public class UIManager extends Activity
     TextView coinsText;
     View askName;
     EditText nameInput;
-    LutemonList[] lutemonLists;
     Card card;
 
     Lutemon lutemonViewed=null;
     int currentView=0;
-
-    public UIManager Start ()
-    {
-            ChangeView(0);
-    }
 
     //asking name
     public void AskName()
@@ -38,7 +32,6 @@ public class UIManager extends Activity
         {
             lutemonViewed.GiveName(nameInput.getText().toString());
             card.Show(lutemonViewed);
-            UpdateLists();
             lutemonViewed = null;
         }
         //close ask name view
@@ -65,22 +58,6 @@ public class UIManager extends Activity
     {
         card.Close();
         lutemonViewed = null;
-    }
-
-    public void UpdateLists(Lutemon[] lutemons)
-    {
-        for(LutemonList list : lutemonLists)
-        {
-            list.UpdateList(lutemons);
-        }
-    }
-
-    public void UpdateLists()
-    {
-        for(LutemonList list : lutemonLists)
-        {
-            list.UpdateContainers();
-        }
     }
 }
 

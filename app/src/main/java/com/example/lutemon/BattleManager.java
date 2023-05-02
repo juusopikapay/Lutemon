@@ -11,11 +11,11 @@ public class BattleManager
 
     public void GiveEnemy()
     {
-        if (chooseLutemon.Lutemon == null) return;
+        /*if (chooseLutemon.Lutemon == null) return;
         player=chooseLutemon.Lutemon;
         int enemyExperience = player.getExperience()+new Random().nextInt(5)-2;
         if (enemyExperience < 0) enemyExperience = 0;
-        enemy=Lutemon.RandomLutemon(enemyExperience);
+        enemy=Lutemon.RandomLutemon(enemyExperience);*/
     }
 
     public void StartFight()
