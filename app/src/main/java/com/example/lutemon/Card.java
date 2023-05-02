@@ -12,8 +12,8 @@ public class Card
 
     public void Show(Lutemon lutemon)
     {
-        image.setColorFilter(lutemon.Rgb());
-        name.setText(lutemon.GetName());
+        image.setColorFilter(lutemon.getColor());
+        name.setText(lutemon.getName());
         //open card
     }
 

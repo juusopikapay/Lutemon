@@ -3,6 +3,7 @@ package com.example.lutemon;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,5 +23,10 @@ public class MainActivity extends AppCompatActivity {
             TabLayout.Tab tab = tabLayout.getTabAt(i);
             tab.setCustomView(pagerAdapter.getTabView(i));
         }
+    }
+
+    public void addLutemon(View view)
+    {
+        Player.getInstance().addLutemon();
     }
 }
